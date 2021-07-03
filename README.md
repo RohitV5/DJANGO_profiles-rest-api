@@ -34,6 +34,7 @@ if everything works fine then u will see (env) in terminal next to current folde
 # cmd to deactivate virtual environment simply
 deactivate
 
-
+# save the required packages in requirements.txt and run cmd
+pip install -r requirements.txt
 
 
