@@ -37,4 +37,11 @@ deactivate
 # save the required packages in requirements.txt and run cmd
 pip install -r requirements.txt
 
+# Now we can run django commands
+# syntax django-admin.py startproject project_name directory(optional, but put dot for current directory or else it will create a subfolder.)
+django-admin.py startproject profiles_project .
+
+# Now we have a djaongo project, we need to create a django app. A single project can consist of multiple apps.
+python manage.py startapp profiles_api
+
 
