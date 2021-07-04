@@ -56,5 +56,7 @@ python manage.py makemigrations profiles_api
 
 # run migration to create db
 
+# create admin user from admin.py
+python manage.py createsuperuser
 
-
+http://localhost:8000/admin
