@@ -5,9 +5,11 @@ Profile rest api course code.
 
 # cmd for vagrant initialization
 vagrant init ubuntu/bionic64
+
+# cmd for starting vagrant everytime
 vagrant up
 vagrant ssh
-cd vagrant --> this is where all files are present
+cd /vagrant --> this is where all files are present
 
 Vagrant configuration are available online. We are using ubuntu virtual machine to run our python
 becuase python dependencies and stored in a differnet way and windows environment is not best place to develop python code.
@@ -43,5 +45,16 @@ django-admin.py startproject profiles_project .
 
 # Now we have a djaongo project, we need to create a django app. A single project can consist of multiple apps.
 python manage.py startapp profiles_api
+
+
+# cmd to run python dev server
+python manage.py runserver 0.0.0.0:8000
+
+
+# cmd for creating migration everytime you change your models
+python manage.py makemigrations profiles_api
+
+# run migration to create db
+
 
 
