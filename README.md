@@ -60,3 +60,7 @@ python manage.py makemigrations profiles_api
 python manage.py createsuperuser
 
 http://localhost:8000/admin
+
+
+#Chrome extension for testing token request
+modheader
